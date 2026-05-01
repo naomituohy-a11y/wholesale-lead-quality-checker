@@ -37,9 +37,9 @@ CELL_RED = PatternFill(start_color="F4CCCC", end_color="F4CCCC", fill_type="soli
 # ============================================================
 
 def norm_text(v):
-if v is None:
-return ""
-return re.sub(r"\s+", " ", str(v)).strip().lower()
+    if v is None:
+        return ""
+    return re.sub(r"\s+", " ", str(v)).strip().lower()
 
 def norm_key(v):
 v = norm_text(v)
